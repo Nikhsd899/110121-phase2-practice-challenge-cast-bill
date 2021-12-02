@@ -6,7 +6,7 @@ const BillCard = ({ bill }) => {
       <div
         className="ui card"
         key={bill.id}
-        onClick={() => console.log('add code to connect event listener')}
+        onClick={() => handleClick(bill)}
       >
         <div className="image">
           <img alt={bill.name} src={bill.photo} />
